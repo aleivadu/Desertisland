@@ -34,6 +34,18 @@ public class Playlist {
         desertIslandPlaylist.remove(2);
         desertIslandPlaylist.remove(1);
 
+        int songA = desertIslandPlaylist.indexOf("el afinaito - los trapitos");
+        int songB = desertIslandPlaylist.indexOf("diomedes diaz - parranda ron y muje");
+
+        String tempA = desertIslandPlaylist.get(songA);
+        desertIslandPlaylist.set(songA, desertIslandPlaylist.get(songB));
+        desertIslandPlaylist.set(songB, tempA);
+
+
+
+
+
+
 
     }
     public void playSongs(){
